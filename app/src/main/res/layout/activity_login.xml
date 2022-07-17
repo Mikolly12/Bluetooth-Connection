@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/c1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="100dp"
+        >
+    <LinearLayout
+        android:id="@+id/l2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/userid"/>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Name"
+            android:text="John Doe"
+            android:textSize="16sp"
+            android:textColor="@color/blue"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:backgroundTint="@color/lightblue"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l3"
+        app:layout_constraintTop_toBottomOf="@id/l2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/mail"/>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Email"
+            android:text="johndoe@mail.com"
+            android:textSize="16sp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/blue"
+            android:padding="10dp"
+            android:backgroundTint="@color/lightblue"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l4"
+        app:layout_constraintTop_toBottomOf="@id/l3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/lock"/>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Password"
+            android:text="johndoe@gmail.com"
+            android:textSize="16sp"
+            android:inputType="textPassword"
+            android:textColor="@color/blue"
+            android:padding="10dp"
+            android:backgroundTint="@color/lightblue"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/conti"
+        app:layout_constraintTop_toBottomOf="@id/l4"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:background="@drawable/curve_corner"/>
+
+<!--
+    <LinearLayout
+        android:id="@+id/l5"
+        app:layout_constraintTop_toBottomOf="@id/conti"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+         <Button
+            android:id="@+id/facebook_login_btn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="8dp" android:layout_marginHorizontal="30dp"
+            android:padding="8dp"
+            android:textAllCaps="false"
+            android:background="@drawable/round_corner"
+            android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/twitter_login_btn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="8dp"
+            android:padding="8dp"
+            android:textAllCaps="false"
+            android:background="@drawable/round_corner"
+            android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/google_login_btn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="8dp"
+            android:layout_marginHorizontal="30dp"
+            android:padding="8dp"
+            android:textAllCaps="false"
+            android:background="@drawable/round_corner"
+            android:textColor="@android:color/white" />
+    </LinearLayout>     -->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/login"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="50dp"
+        android:text="Already have an account?"
+        android:textColor="@color/blue"
+        />
+    <Button
+        android:id="@+id/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:text="Login"
+        android:textColor="@color/blue"
+        android:background="@color/lightblue"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
